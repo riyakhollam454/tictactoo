@@ -1,0 +1,132 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+/* Winning line style */
+/* .winning-cell { */
+    /* background-color: #9bdeac; Light green background to highlight winning cells */
+/* } */
+
+/* #gameStatus {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+} */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eaeaea; /* Soft gray background */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Dark gray for the title */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff; /* White background for cells */
+    border: 2px solid #444; /* Darker border for visibility */
+    font-size: 3rem; /* Larger font size for X and O */
+    color: #333; /* Dark gray for symbols */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Added transform for effect */
+}
+
+.cell:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Winning line style */
+.winning-cell {
+    background-color: #9bdeac; /* Light green background for winning cells */
+}
+
+#gameStatus {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444; /* Darker gray for status text */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #3498db; /* Blue button */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
